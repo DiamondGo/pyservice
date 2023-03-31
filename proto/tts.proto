@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "external/service";
+
+message File {
+    string name = 1;
+    bytes data = 2;
+}
+
+message Text {
+    string text = 1;
+}
+
+message Response {
+    bool success = 1;
+    File fileResponse = 2;
+}
+
+service GoogleTranslateTTS {
+    rpc TextToSpeech(Text) returns (Response){}
+}
