@@ -8,6 +8,6 @@ if __name__ == "__main__":
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=2))
     add_GoogleTranslateTTSServicer_to_server(
         GoogleTranslateTTSService(), server)
-    server.add_insecure_port('[::]:50051')
+    server.add_insecure_port('0.0.0.0:50051')
     server.start()
     server.wait_for_termination()
