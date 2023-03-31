@@ -1,3 +1,4 @@
 __pycache__
-pb/__init__.py
 pb/*.py
+service/__pycache__/TtsServer.cpython-39.pyc
+*.pyc
