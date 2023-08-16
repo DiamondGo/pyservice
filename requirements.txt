@@ -1,4 +1,4 @@
-grpcio==1.38.1
-grpcio-tools==1.38.1
+grpcio==1.57.0
+grpcio-tools==1.57.0
 detectlanguage==1.5.0
 gTTS==2.3.1
